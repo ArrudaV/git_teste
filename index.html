@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Front End Totvs</title>
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    <script src="js/modal.js">text/javascript</script>
+</head>
+<body>
+
+    <main>
+        <header id="cabecalho_pagina">
+            <nav id="menu">
+                <a href="#">Produtos</a>
+                <a href="#">Recursos</a>
+                <a href="#">Inspiração</a>
+                <a href="#">Preços</a>
+            </nav>
+            <nav id="logo">
+                <img src="./images/figura1.png" alt=""/>
+            </nav>
+            <nav id="elementos">
+                <img src="./images/figura4.png" alt=""/>
+                <button id="conectar">Conectar</button>
+                <a href="#" id="cadastro" onclick="abrir_modal()">Cadastre-se gratuitamente</a>
+            </nav>
+        </header>
+        <section id="container">
+            <section id="esquerda">
+                <h1>As lojas do Mailchimp já estão disponíveis</h1>
+                <p>Impulsione as vendas, envolva os clientes e anuncie seu negócio em um só lugar. Crie sua loja virtual gratuitamente.</p>
+                <button id="saiba_mais">Saiba mais</button>
+            </section>
+            <section id="direita">
+                <div id="big">
+                    <img src="./images/tres_pontinhos.png" alt="" id="pontinho">
+                    <img src="./images/carrinho.png" alt="" id="carrinho">
+                    <h2 id="h2_big">Big Mood Spa</h2>
+                    <img src="./images/figura2.png" alt="" id="pote">
+                </div>
+                <div id="small">
+                    <h3>ShoppingCart</h3>
+                    <img src="./images/figua3.png" alt="">
+                    <button id="btn_shop">Continue To Checkout</button>
+                </div>
+            </section>
+        </section>  
+
+        <div class="janela_escura">
+            <div class="modal">
+                <div class="fechar" onclick="fechar_modal()">X</div>
+                <br>
+                <form>
+				<legend> <h2> Cadastre-se </h2> </legend>
+				<br />
+					<label>Digite seu nome: 
+					<input type="text" size="30" maxlength="30"  />
+					</label><br />
+					<label>Digite seu e-mail: 
+					<input type="mail" size="30" maxlength="30"  />
+					</label><br />
+					<label>Seu gênero: 
+					<select name="genero">
+						<option>masculino</option>
+						<option>feminino</option>
+						<option>outro</option>
+					</select>
+					</label><br />
+
+					<label>Digite sua senha:
+					<input type="password" size="8" />
+					</label>
+					<input type="submit" value="enviar" class="enviar" />
+				
+			</form>
+            </div>
+        </div>
+
+        <footer>
+            <p>Produtos</p>
+            <p>Recursos</p>
+            <p>Comunidade</p>
+            <p>A empresa</p>
+            <p>Ajuda</p>
+        </footer>
+        
+    </main>
+
+
+</body>
+</html>
